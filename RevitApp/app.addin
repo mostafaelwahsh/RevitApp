@@ -1,0 +1,18 @@
+﻿<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>RevitApplication</Name>
+		<Assembly>RevitApplication.dll</Assembly>
+		<AddInId>
+			1C814771-98AF-4830-A9EE-4F99C7B7091C
+		</AddInId>
+		<FullClassName>RevitApplication.ExternalApp</FullClassName>
+		<Text>RevitApp</Text>
+		<Description></Description>
+		<VendorId>ITI</VendorId>
+		<VendorDescription>@ITI</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+
+	
+
+</RevitAddIns>

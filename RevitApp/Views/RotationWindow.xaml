@@ -1,0 +1,36 @@
+﻿<Window x:Class="RevitApplication.Views.RotationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RevitApplication.Views"
+        mc:Ignorable="d"
+        Title="Elements Rotation" Height="220" Width="350"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.7*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+            <TextBlock  Text="Elements Rotation" FontFamily="Times New Roman" FontWeight="Black" 
+                   FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5"/>
+
+            <Image Source="D:\Mostafa Elwahsh\Revit\WPF\RevitApp\RevitApp\Images\edit-rotate-angle-icon-1024x1024-lltyb5ts.png" Height="50" HorizontalAlignment="Center"
+                   VerticalAlignment="Center" Margin="0,10" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <Label Content="Angle :" 
+                   HorizontalAlignment="Center" Margin="15,0,0,25" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="20"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,15,5,35" Height="20" Width="90" Text="{Binding RotationAngle}"/>
+            <Label Content="°" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,30" FontFamily="Times New Roman" FontSize="20"/>
+        </StackPanel>
+        <Button Grid.Row="1" Grid.Column="1" Content="Apply" Height="25" 
+                Width="90" Command="{Binding ApplyCommand}"  Margin="15,15,5,35" FontFamily="Times New Roman" FontSize="15" />
+    </Grid>
+</Window>
