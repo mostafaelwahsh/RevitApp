@@ -25,7 +25,7 @@ namespace RevitApplication
         #region Constructor
         public TagViewModel()
         {
-            this.DoneCommand = new Command(Execute);
+            this.DoneCommand = new RelayCommand(sady);
         }
 
         #endregion
